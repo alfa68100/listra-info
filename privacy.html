@@ -8,16 +8,17 @@
 <h2>Whose data</h2>
 <p>Listra connects only to the Etsy and Pinterest accounts of its owner. It does not collect data from customers, buyers or any other Etsy users, and it has no accounts, sign-ups or tracking of visitors.</p>
 <h2>What it accesses on Etsy</h2>
-<p>With the owner's permission (Etsy OAuth), Listra can read the owner's shop and listing information and create and update draft listings in the owner's shop. It does not publish listings, and it does not read buyer messages or orders.</p>
+<p>With the owner's permission (Etsy OAuth), Listra can read the owner's shop and listing information and create and update draft listings in the owner's shop. It does not publish listings. The Etsy permissions it requests cover reading and writing listings and reading shop information only; it does not request access to orders, transactions or buyer messages.</p>
 <h2>What it accesses on Pinterest</h2>
 <p>With the owner's permission (Pinterest OAuth), Listra can read the list of the owner's boards and create Pins on those boards. Each Pin contains the image, title and link of one of the owner's own Etsy listings. A Pin is created only after the owner confirms it in Listra. Listra does not read other people's content or messages.</p>
 <h2>Where data is stored</h2>
-<p>Listing data and the Etsy connection are kept on the owner's own computer. Listra does not send them to a server operated by the owner or by any third party for storage.</p>
-<h2>Third-party services</h2>
+<p>The Etsy and Pinterest connection keys and Listra's archive of listing data are kept in a local database on the owner's own computer. Listra does not run a server of its own and does not use any analytics or tracking service.</p>
+<h2>Data sent to other services</h2>
+<p>Listra sends listing content to the following services only, and only as part of the owner's own work:</p>
 <ul>
-<li><strong>Etsy</strong>: receives the draft listings the owner sends.</li>
-<li><strong>Pinterest</strong>: receives the Pins the owner confirms.</li>
-<li><strong>Google Gemini API</strong>: supplier text and product photos may be sent to Google to help write or check listing text and to prepare images. Google's own terms apply to that processing.</li>
+<li><strong>Etsy</strong>: draft listings, photos and inventory details for the owner's own shop. Listra also reads the owner's shop and listing information, and runs public keyword searches that contain only the search words.</li>
+<li><strong>Google (Gemini models via Google Vertex AI)</strong>: to help write and check listing text and to prepare images, Listra sends supplier text, product photos (including variation images and description images) and, in some tools, plain text prompts. Google's own terms apply to that processing.</li>
+<li><strong>Pinterest</strong>: the image, title and link of a Pin that the owner has confirmed.</li>
 </ul>
 <h2>Sharing and selling</h2>
 <p>No data is sold or shared with advertisers.</p>
